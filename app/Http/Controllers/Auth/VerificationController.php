@@ -18,8 +18,11 @@ class VerificationController extends Controller
     | be re-sent if the user didn't receive the original email message.
     |
     */
+    
 
     use VerifiesEmails;
+
+    
 
     /**
      * Where to redirect users after verification.
@@ -27,6 +30,8 @@ class VerificationController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
+
+
 
     /**
      * Create a new controller instance.
@@ -38,5 +43,7 @@ class VerificationController extends Controller
         $this->middleware('auth');
         $this->middleware('signed')->only('verify');
         $this->middleware('throttle:6,1')->only('verify', 'resend');
+
+        
     }
 }
