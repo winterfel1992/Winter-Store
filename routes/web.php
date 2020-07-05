@@ -26,4 +26,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('/admin')->group(function(){
     Route::get('/', 'HomeController@adminIndex');
+    Route::get('/userManage', 'UserController@index');
+    
 });

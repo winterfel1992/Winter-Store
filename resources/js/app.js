@@ -28,6 +28,14 @@ vue.use(Vuetify);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('admin', require('./components/Admin.vue').default);
+Vue.component('dashboard', require('./components/views/Dashboard.vue').default);
+Vue.component('category', require('./components/views/Category.vue').default);
+Vue.component('product', require('./components/views/Products.vue').default);
+Vue.component('manageWeb', require('./components/views/ManageWeb.vue').default);
+Vue.component('userProfile', require('./components/views/Userprofile.vue').default);
+Vue.component('userManage', require('./components/views/UserManage.vue').default);
+
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
